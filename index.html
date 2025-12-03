@@ -49,13 +49,13 @@
 </nav>
 
 <!-- INTRO SECTION -->
-<section id="intro" class="py-2 bg-light position-relative overflow-hidden" style="height: 50vh;">
-  <div class="container position-relative">
-    <div class="row h-100 justify-content-center align-items-center">
-      <div class="col-lg-8" id="aboutme">
+<section id="intro" class="bg-light position-relative overflow-hidden">
+  <div class="container px-0 h-100">
+    <div class="row g-0 h-100">
+      <div class="col-lg-8 position-relative">
 
         <!-- CAROUSEL BEHIND TEXT -->
-        <div class="carousel-container position-absolute top-0 start-0 w-100 h-100" style="z-index: 1; opacity: 0.5;">
+        <div class="carousel-container position-absolute top-0 start-0 w-100 h-100" style="z-index: 1; opacity: 1;">
           <div id="carouselExampleIndicators" class="carousel slide carousel-fade h-100" data-bs-ride="carousel">
 
             <div class="carousel-indicators">
@@ -76,37 +76,47 @@
               </div>
             </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
               <span class="carousel-control-prev-icon"></span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
               <span class="carousel-control-next-icon"></span>
-            </button>
+            </button> -->
 
           </div>
         </div>
 
         <!-- TEXT CONTENT -->
-        <div class="p-4 p-md-5 bg-white shadow rounded position-relative" style="z-index: 5; opacity: 0.75">
+        <div class="p-4 p-md-5 bg-white shadow rounded position-relative" style="z-index: 5; opacity: 0.9; margin: 3rem;">
           <h2 class="mb-4 text-center fw-bold">
             Where technology meets life science — that's where I build.
           </h2>
 
-          <p class="fw-semibold">
-            Building powerful solutions through code, data, and computational thinking.
-            Driven by creating efficient, scalable, and automation-focused tech workflows.
-            Passionate about programming, problem-solving, and end-to-end tool development.
-            Focused on clean data handling, fast processing, and practical tech innovation.
-            Exploring the intersection where my IT skills elevate bioinformatics research.
-            Always eager to connect with people shaping the future of tech and data.
-          </p>
+          <ul class="fw-semibold fs-6 fs-md-5 list-unstyled">
+            <li class="mb-2"><i class="bi bi-lightning-charge me-2"></i>
+              Building powerful solutions through code, data, and computational thinking.
+            </li>
+            <li class="mb-2"><i class="bi bi-lightning-charge me-2"></i>
+              Driven by efficient, scalable, and automation-focused tech workflows.
+            </li>
+            <li class="mb-2"><i class="bi bi-lightning-charge me-2"></i>
+              Passionate about programming, problem-solving, and end-to-end tool development.
+            </li>
+            <li class="mb-2"><i class="bi bi-lightning-charge me-2"></i>
+              Focused on clean data handling, fast processing, and practical tech innovation.
+            </li>
+            <li class="mb-2"><i class="bi bi-lightning-charge me-2"></i>
+              Exploring the intersection where IT skills elevate bioinformatics research.
+            </li>
+            <li class="mb-2"><i class="bi bi-lightning-charge me-2"></i>
+              Always eager to connect with people shaping the future of tech and data.
+            </li>
+          </ul>
         </div>
-
       </div>
     </div>
   </div>
 </section>
-
 
 <!-- PROJECTS SECTION -->
 <section id="projects">
@@ -116,8 +126,9 @@
           <span class="mx-3 fw-bold">PROJECTS</span>
           <div class="flex-grow-1 border-top"></div>
         </div>
+
       <div class="row g-4">
-            <div class="col-md-4 d-flex">
+            <div class="col-md-3 d-flex">
               <div class="card shadow-lg w-100 d-flex flex-column">
                 <div class="ratio ratio-16x9">
                   <img src="./project1.jpg" class="card-img-top object-fit-cover" alt="project1 image">
@@ -135,7 +146,7 @@
               </div>
             </div>
 
-            <div class="col-md-4 d-flex">
+            <div class="col-md-3 d-flex">
               <div class="card shadow-lg w-100 d-flex flex-column">
                 <div class="ratio ratio-16x9">
                   <img src="./project2.jpeg" class="card-img-top object-fit-cover" alt="project2 image">
@@ -152,12 +163,46 @@
                 </div>
               </div>
             </div>
+
+            <div class="col-md-3 d-flex">
+              <div class="card shadow-lg w-100 d-flex flex-column">
+                <div class="ratio ratio-16x9">
+                  <img src="./project3.jpg" class="card-img-top object-fit-cover" alt="project3 image">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">C++ Bookstore Manager</h5>
+                  <p class="card-text flex-grow-1">
+                    Contributed in creating a streamlined C++ bookstore management tool that enhances usability, reduces manual workload by 50%, and reliably processes 1,000+ customer records.
+                  </p>
+                  <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#project3">
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 d-flex">
+              <div class="card shadow-lg w-100 d-flex flex-column">
+                <div class="ratio ratio-16x9">
+                  <img src="./project4.jpg" class="card-img-top object-fit-cover" alt="project4 image">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">COVID Healthcare Project — Stanford CIP 2021</h5>
+                  <p class="card-text flex-grow-1">
+                    Built a Python project in Stanford University's Code in Place (2021) course, earning positive instructor feedback and strengthening coding skills in a global 30,000+ participant cohort.
+                  </p>
+                  <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#project4">
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
     </div>
 
 <!-- MODAL FOR PROJECTS INFO -->
-<div class="modal fade" id="project1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="project1Label" aria-hidden="true">
+<div class="modal fade" id="project1" data-bs-backdrop="true" data-bs-keyboard="true" tabindex="-1" aria-labelledby="project1Label" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
@@ -185,7 +230,7 @@
   </div>
 </div>
 
-<div class="modal fade" id="project2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="project2Label" aria-hidden="true">
+<div class="modal fade" id="project2" data-bs-backdrop="true" data-bs-keyboard="true" tabindex="-1" aria-labelledby="project2Label" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
@@ -205,6 +250,70 @@
           class="btn btn-primary text-white d-inline-flex align-items-center">
           <i class="bi bi-link-45deg me-2 fs-6 m-0"></i>
           <span class="fs-6">View Project on GitHub</span>
+        </a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="project3" data-bs-backdrop="true" data-bs-keyboard="true" tabindex="-1" aria-labelledby="project3Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project3Label">C++ Bookstore Manager</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item active fw-bold">Key Highlights:</li>
+          <li class="list-group-item d-flex"><i class="bi bi-check-circle me-2 text-success"></i>Created a C++ console-based system, reducing manual effort by 50% through streamlined customer and purchase management. </li>
+          <li class="list-group-item d-flex"><i class="bi bi-check-circle me-2 text-success"></i>Improved Usability: Designed an intuitive interface, boosting operational efficiency by 30% over manual processes.</li>
+          <li class="list-group-item d-flex"><i class="bi bi-check-circle me-2 text-success"></i>Optimized Performance: Enhanced data handling to manage 1,000+ customer records and transactions with high accuracy and reliability.</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <a href="https://github.com/RaannaKasturi/Bookstore-Manager" target="_blank" 
+          class="btn btn-primary text-white d-inline-flex align-items-center">
+          <i class="bi bi-link-45deg me-2 fs-6 m-0"></i>
+          <span class="fs-6">View Project on GitHub</span>
+        </a>
+        <a href="https://youtu.be/dIaDElQodRs?si=VPZewV8OaJnnuxoD" target="_blank" 
+          class="btn btn-primary text-white d-inline-flex align-items-center">
+          <i class="bi bi-link-45deg me-2 fs-5 m-0"></i>
+          <span class="fs-6">View Project Demo on YouTube</span>
+        </a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="project4" data-bs-backdrop="true" data-bs-keyboard="true" tabindex="-1" aria-labelledby="project4Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project4Label">COVID Healthcare Project — Stanford CIP 2021</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item active fw-bold">Key Highlights:</li>
+          <li class="list-group-item d-flex"><i class="bi bi-check-circle me-2 text-success"></i>Completed a Python-based final project during the 5-week Stanford University Code in Place 2021 course.</li>
+          <li class="list-group-item d-flex"><i class="bi bi-check-circle me-2 text-success"></i>Demonstrated proficiency in programming and data structures and received positive feedback from course instructors.</li>
+          <li class="list-group-item d-flex"><i class="bi bi-check-circle me-2 text-success"></i>Collaborated in a global learning environment, contributing to a cohort of 30,000+ participants, enhancing coding skills and problem-solving techniques.</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <a href="https://codeinplace.stanford.edu/2021/showcase/190" target="_blank" 
+          class="btn btn-primary text-white d-inline-flex align-items-center">
+          <i class="bi bi-link-45deg me-2 fs-5 m-0"></i>
+          <span class="fs-6">View Project on Stanford University's <br>Official Code in Place Website</span>
+        </a>
+        <a href="https://youtu.be/rW4jju9tvT0?si=mQWZBuGOqtZUK5hY" target="_blank" 
+          class="btn btn-primary text-white d-inline-flex align-items-center">
+          <i class="bi bi-link-45deg me-2 fs-5 m-0"></i>
+          <span class="fs-6">View Project Demo on YouTube</span>
         </a>
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
