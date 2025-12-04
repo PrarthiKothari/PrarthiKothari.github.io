@@ -10,9 +10,76 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@latest/dist/iconify-icon.min.js" defer></script>
+
+    <style>
+      .skill {
+        width: 100px;
+        height: 100px;
+      }
+
+      .skill .outer {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: conic-gradient(#4f46e5 calc(var(--p)*1%), #ddd 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .skill .inner {
+        width: 65%;
+        height: 65%;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .timeline {
+      border-left: 3px solid #4f46e5;
+      padding-left: 30px;
+      margin-left: 20px;
+      }
+
+      .timeline .event {
+        margin-bottom: 40px;
+        position: relative;
+      }
+
+      /* CIRCLE */
+      .timeline .event::before {
+        content: "";
+        width: 14px;
+        height: 14px;
+        background: #4f46e5;
+        border-radius: 50%;
+        position: absolute;
+        left: -38px;
+        top: 5px;
+      }
+
+      .containerevents{
+        margin-left: 15%;
+      }
+      
+      .containerevents .event h5 {
+        font-weight: bold;
+      }
+
+      .col-md-auto{
+        margin: 0 2% 2% 2%;
+      }
+    </style>
+
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
@@ -26,16 +93,16 @@
           <a class="nav-link" href="#intro">Home</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#education">Education</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#involvements">Involvements</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#achievements">Achievements</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
@@ -66,22 +133,22 @@
 
             <div class="carousel-inner h-100">
               <div class="carousel-item active">
-                <img src="carousel_image1.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                <img src="images/carousel_image1.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="carousel_image2.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                <img src="images/carousel_image2.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="carousel_image3.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                <img src="images/carousel_image3.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
               </div>
             </div>
 
-            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
               <span class="carousel-control-prev-icon"></span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
               <span class="carousel-control-next-icon"></span>
-            </button> -->
+            </button>
 
           </div>
         </div>
@@ -118,10 +185,155 @@
   </div>
 </section>
 
+<!-- SKILLS SECTION -->
+<section id="skills">
+    <div class="container">
+        <div class="d-flex align-items-center my-4">
+          <div class="flex-grow-1 border-top"></div>
+          <span class="mx-3 fw-bold">SKILLS</span>
+          <div class="flex-grow-1 border-top"></div>
+        </div>
+    
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+              <div class="skill" style="--p:75">
+                <div class="outer">
+                  <div class="inner">
+                     <iconify-icon icon="flowbite:html-solid" width="40" height="40"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-auto">
+              <div class="skill" style="--p:75">
+                <div class="outer">
+                  <div class="inner">
+                     <iconify-icon icon="flowbite:css-solid" width="40" height="40"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-auto">
+              <div class="skill" style="--p:95">
+                <div class="outer">
+                  <div class="inner">
+                     <iconify-icon icon="devicon-plain:bootstrap" width="40" height="40"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-auto">
+              <div class="skill" style="--p:75">
+                <div class="outer">
+                  <div class="inner">
+                     <iconify-icon icon="bi:javascript" width="35" height="35"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-auto">
+              <div class="skill" style="--p:75">
+                <div class="outer">
+                  <div class="inner">
+                     <iconify-icon icon="akar-icons:react-fill" width="40" height="40"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-auto">
+              <div class="skill" style="--p:75">
+                <div class="outer">
+                  <div class="inner">
+                     <iconify-icon icon="cib:mysql" width="45" height="45"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-auto">
+              <div class="skill" style="--p:75">
+                <div class="outer">
+                  <div class="inner">
+                     <iconify-icon icon="ri:java-fill" width="40" height="40"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+              <div class="skill" style="--p:75">
+                <div class="outer">
+                  <div class="inner">
+                     <iconify-icon icon="simple-icons:spring" width="40" height="40"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-auto">
+              <div class="skill" style="--p:75">
+                <div class="outer">
+                  <div class="inner">
+                     <iconify-icon icon="lineicons:mongodb" width="40" height="40"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-auto">
+              <div class="skill" style="--p:75">
+                <div class="outer">
+                  <div class="inner">
+                     <iconify-icon icon="simple-icons:angular" width="40" height="40"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-auto">
+              <div class="skill" style="--p:75">
+                <div class="outer">
+                  <div class="inner">
+                     <iconify-icon icon="flowbite:aws-solid" width="40" height="40"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-auto">
+              <div class="skill" style="--p:75">
+                <div class="outer">
+                  <div class="inner">
+                     <iconify-icon icon="akar-icons:python-fill" width="40" height="40"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-auto">
+              <div class="skill" style="--p:75">
+                <div class="outer">
+                  <div class="inner">
+                     <iconify-icon icon="arcticons:microsoft-power-bi" width="40" height="40"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>    
+</section>
+
 <!-- PROJECTS SECTION -->
 <section id="projects">
     <div class="container">
-        <div class="d-flex align-items-center my-5">
+        <div class="d-flex align-items-center my-4">
           <div class="flex-grow-1 border-top"></div>
           <span class="mx-3 fw-bold">PROJECTS</span>
           <div class="flex-grow-1 border-top"></div>
@@ -131,7 +343,7 @@
             <div class="col-md-3 d-flex">
               <div class="card shadow-lg w-100 d-flex flex-column">
                 <div class="ratio ratio-16x9">
-                  <img src="./project1.jpg" class="card-img-top object-fit-cover" alt="project1 image">
+                  <img src="images/project1.png" class="card-img-top object-fit-cover img-fluid" alt="project1 image">
                 </div>
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">NGS-Precision Medicine Toolkit</h5>
@@ -149,7 +361,7 @@
             <div class="col-md-3 d-flex">
               <div class="card shadow-lg w-100 d-flex flex-column">
                 <div class="ratio ratio-16x9">
-                  <img src="./project2.jpeg" class="card-img-top object-fit-cover" alt="project2 image">
+                  <img src="images/project2.png" class="card-img-top object-fit-cover img-fluid" alt="project2 image">
                 </div>
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Protein Research Toolkit</h5>
@@ -167,7 +379,7 @@
             <div class="col-md-3 d-flex">
               <div class="card shadow-lg w-100 d-flex flex-column">
                 <div class="ratio ratio-16x9">
-                  <img src="./project3.jpg" class="card-img-top object-fit-cover" alt="project3 image">
+                  <img src="images/project3.png" class="card-img-top object-fit-cover img-fluid" alt="project3 image">
                 </div>
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">C++ Bookstore Manager</h5>
@@ -184,7 +396,7 @@
             <div class="col-md-3 d-flex">
               <div class="card shadow-lg w-100 d-flex flex-column">
                 <div class="ratio ratio-16x9">
-                  <img src="./project4.jpg" class="card-img-top object-fit-cover" alt="project4 image">
+                  <img src="images/project4.png" class="card-img-top object-fit-cover img-fluid" alt="project4 image">
                 </div>
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">COVID Healthcare Project — Stanford CIP 2021</h5>
@@ -325,18 +537,67 @@
 
 <!-- EDUCATION SECTION -->
 <section id="education">
+  <div class="container">
+      <div class="d-flex align-items-center my-4">
+        <div class="flex-grow-1 border-top"></div>
+        <span class="mx-3 fw-bold">EDUCATION</span>
+        <div class="flex-grow-1 border-top"></div>
+      </div>
+    </div>
 
+      <div class="containerevents timeline py-3 my-0">
+        <div class="event">
+          <h5>Master of Science (M. Sc.) in Bioinformatics</h5>
+          <span class="text-muted">2023-2025 &bull; Guru Nanak Khalsa College of Arts, Science & Commerce (Autonomous)</span>
+          <p class="mt-0">CGPA: 9.06</p>
+          <ul>
+            <li>Achieved 2nd Place | SRIJNA - 6th National Level Poster Competition (PG Category) (2024-25).</li>
+            <li>Coordinated BION 2023-2024 & 2024-25 events and presented at Aavishkar 2024-25.</li>
+            <li>Hands-on experience in bioinformatics, programming, and wet lab techniques.</li>
+            <li>Integrated computational tools with biological research; skilled in flow cytometry, statistical analysis, machine learning, and scientific communication.</li>
+          </ul>
+        </div>
+
+        <div class="event" style="margin-bottom: 0;">
+          <h5>Bachelor of Science (B. Sc.) in Biotechnology</h5>
+          <span class="text-muted">2020-2023 &bull; Mithibai College of Arts, Chauhan Institute of Science and Amrutben Jivanlal College of Commerce and Economics (Autonomous)</span>
+          <p class="mt-0">CGPA: 8.20</p>
+          <ul class="mb-0">
+            <li>Accomplished an Add-On Course in Advanced Bioinformatics with an 'O' grade</li>
+            <li>Contributed to organizing a National Symposium on Climate Change and Biodiversity.</li>
+            <li>Strong foundation in core biological sciences with hands-on experience in genetic engineering, tissue culture, fermentation, and chromatography.</li>
+            <li>Integrated lab and computational skills to support diverse scientific and industry applications.</li>
+          </ul>
+        </div>
+      </div>
 </section>
 
-<!-- INVOLVEMENTS SECTION -->
-<section id="involvements">
-    
-</section>
+<!-- ACHIEVEMENTS -->
+ <section id="achievements">
+    <div class="container">
+        <div class="d-flex align-items-center my-4">
+          <div class="flex-grow-1 border-top"></div>
+          <span class="mx-3 fw-bold">ACHIEVEMENTS</span>
+          <div class="flex-grow-1 border-top"></div>
+        </div>
+      </div>
 
-<!-- SKILLS SECTION -->
-<section id="skills">
-    
-</section>
+      <div class="row mx-4" data-masonry='{"percentPosition": true }'>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <img src="images/achievement2.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <img src="images/achievement1.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <img src="images/achievement3.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <img src="images/achievement4.jpg" class="img-fluid rounded">
+        </div>
+    </div>
+  </div>
+ </section>
 
 <!-- CONTACT INFO SECTION -->
 <section id="contact">
